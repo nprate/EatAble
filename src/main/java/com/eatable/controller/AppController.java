@@ -12,7 +12,9 @@ public class AppController {
 	
 	@GetMapping("/")
 	public String home(ModelMap model) {
-		//System.out.println("Hello Mawels");
+		//use to display Page Name in Title
+		model.addAttribute("pageName", "Home");
+		
 		model.addAttribute("data", "Hello Mawels !!");
 		return "home";
 	}

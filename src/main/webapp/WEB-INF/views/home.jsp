@@ -1,12 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>EatAble</title>
-</head>
-<body>
-	Hello Home..
-</body>
-</html>
+<jsp:include page="header.jsp" />
+	
+	<div><button class="btn btn-info" onclick="">Show Foods</button></div>
+	<div>Menu Name :<input type="text" id="menuName" value="" /></div>
+	<div>Price :<input type="text" id="priceName" value="" /></div>
+	
+	<script type="text/javascript" src="resources/js/home.js"></script>
+	
+	
+<jsp:include page="footer.jsp" />
