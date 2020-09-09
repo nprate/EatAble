@@ -7,9 +7,11 @@
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
  
  
-    <context:component-scan base-package="com.eatable.controller" />
+    <context:component-scan base-package="com.eatable.controller" /><!-- to scan where Controller that will get request from Dispatcher -->
  
     <mvc:annotation-driven />
+    <mvc:resources mapping="/webjars/**" location="/webjars/"/><!-- use to mapping webjars in Maven webjars for jquery and bootstrap -->
+    <mvc:resources mapping="/resources/**" location="/assets/"/><!-- use to mapping resources directory in webapp/assets of project **must create new assets directory -->
      
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
